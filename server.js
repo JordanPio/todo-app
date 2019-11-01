@@ -5,9 +5,9 @@ let sanitizeHTML = require("sanitize-html");
 let app = express();
 let db;
 
-let port = process.env.PORT
-if (port == null || port = "") {
-  port = 3000
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
 }
 //make content of the folder available to the public
 app.use(express.static("public"));
